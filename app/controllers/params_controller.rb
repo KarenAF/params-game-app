@@ -48,4 +48,22 @@ class ParamsController < ApplicationController
     @message = params["form_message"]
     render 'form_result.html.erb'
   end
+
+  def number_guess_form_show
+    render 'forms_number_guess.html.erb'
+  end
+
+  def number_guess_form_result
+    @secret_number = 25
+    @user_guess = params[:user_guess].to_i
+    if @user_guess == 25
+      @message = "You've won! The number was #{@secret_number}."
+    elsif @user_guess < @secret_number
+      @message = "Guess higher"
+    elsif @user_guess > @secret_number
+      @message = "Guess lower"
+    end
+    render 'forms_number_result.html.erb'
+  end
+
 end
