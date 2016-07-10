@@ -17,6 +17,10 @@ Rails.application.routes.draw do
   get '/array_test' => 'params#array_test'
   get '/url_segment_params/:my_message' => 'params#url_params'
   get '/number_game_seg_param/:user_guess' => 'params#number_guess_segment_param'
+  # These are connected:
+  get '/form_show' => 'params#form_params_show'
+  post '/form_result' => 'params#forms_params_result'
+  # get vs. post
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

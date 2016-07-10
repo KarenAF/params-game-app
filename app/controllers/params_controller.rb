@@ -39,4 +39,8 @@ class ParamsController < ApplicationController
     end
     render 'number_guessing_game.html.erb'
   end
+
+  def form_params_show
+    render 'form_show.html.erb'
+  end
 end
