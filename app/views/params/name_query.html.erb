@@ -1,0 +1,9 @@
+<h1>Your name is:</h1>
+<p><%= @name %></p>
+<br>
+<% if @name.starts_with? "a" %>
+<%= "Hey, your name starts with an 'a'!" %>
+<% end %>
+<h1>Your name in all caps is:</h1>
+<p><%= @name.upcase %></p>
+<p><%= @name_message %></p>
