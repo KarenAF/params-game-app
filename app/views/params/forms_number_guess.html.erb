@@ -1,7 +1,7 @@
 <h1>Welcome to the number-guessing game!</h1>
 <h4>Try to guess the secret number between 1 and 100.</h4>
 
-<%= form_tag('/form_result', {method: :post}) do %>
+<%= form_tag('/forms_number_result', {method: :post}) do %>
   <div>
     <%= label_tag :form_message, 'Enter your guess: ' %>
     <%= text_field_tag :form_message %>

@@ -23,7 +23,7 @@ Rails.application.routes.draw do
   # get vs. post
 
   get '/number_guess_show' => 'params#number_guess_form_show'
-  post '/number_guess_result' => 'params#number_guess_form_result'
+  post '/forms_number_result' => 'params#number_guess_form_result'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

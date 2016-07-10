@@ -1,0 +1,5 @@
+<h2> Your guess: <%= @user_guess %> </h2>
+<p><%= @message %></p>
+<% if @message == "Guess higher" or "Guess lower"%>
+  <p><a href="/number_guess_show"> <%= "Guess again" %> </a> </p>
+  <% end %>

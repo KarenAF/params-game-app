@@ -55,8 +55,8 @@ class ParamsController < ApplicationController
 
   def number_guess_form_result
     @secret_number = 25
-    @user_guess = params[:user_guess].to_i
-    if @user_guess == 25
+    @user_guess = params["form_message"].to_i
+    if @user_guess == @secret_number
       @message = "You've won! The number was #{@secret_number}."
     elsif @user_guess < @secret_number
       @message = "Guess higher"
